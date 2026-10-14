@@ -4,7 +4,7 @@
 [![FSM Type](https://img.shields.io/badge/Architecture-Moore%20%2F%20Mealy-blue.svg)]()
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-A complete set of SystemVerilog Finite State Machine (FSM) implementations for detecting the 13-bit sequence **`0000010010000`**. The repository covers all 4 standard FSM variations:
+A complete set of SystemVerilog Finite State Machine (FSM) implementations for detecting the 13-bit sequence **`000001001000`**. The repository covers all 4 standard FSM variations:
 
 - **Moore Non-Overlapping**
 - **Moore Overlapping**
@@ -25,14 +25,14 @@ A complete set of SystemVerilog Finite State Machine (FSM) implementations for d
 
 ## 🔍 Overview
 
-This project implements robust, synthesizable 2-process FSMs in SystemVerilog to detect the 13-bit serial bitstream **`0000010010000`**. 
+This project implements robust, synthesizable 2-process FSMs in SystemVerilog to detect the 13-bit serial bitstream **`000001001000`**. 
 
 Target sequence breakdown:
 - **`00000`** (5 leading zeros, handled with a self-loop on $S_5$)
 - **`1`** (1 bit)
 - **`00`** (2 bits)
 - **`1`** (1 bit)
-- **`0000`** (4 trailing zeros)
+- **`000`** (3 trailing zeros)
 
 ---
 
